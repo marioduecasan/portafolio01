@@ -311,11 +311,10 @@ footer .container{
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    background: #1ea1f2;
+  
 }
 
 footer p{
     color:#ffffff;
-    background: brown;
 }
 
