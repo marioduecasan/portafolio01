@@ -1,0 +1,321 @@
+/* global */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: black;
+}
+h1,
+h2,
+h3,
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h2{
+    color: #c8c8c8;
+    font-size: 24px;
+    border-left: 4px solid #c8c8c8;
+    padding-left: 7px;
+    margin-bottom: 26px;
+}
+h3{
+    font-size: 16px;
+}
+
+/* Layout */
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+}
+/* header */
+header{
+    background: black;
+    /* padding: 0px 0px; */
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+header a{
+    color: white;
+}
+
+header .logo{
+    font-size: 32px;
+}
+header nav{
+    font-size: 16px;
+}
+header nav a{
+    color: #c7c7c7;
+
+    display: flex;
+
+    align-items: center;
+
+    font-size: 17px;
+}
+header ul{
+    display: flex;
+    align-items: center;
+}
+header li{
+    margin-left: 15px;
+}
+header .subrayado{
+    padding: 9px 0px;
+    border-bottom: 4px solid #42704e;
+}
+/* main */
+main{
+    padding: 35px;
+}
+main section{
+    margin-bottom: 70px;
+}
+main section:hover h2{
+    color: #42704e;
+    border-color: #42704e;
+}
+/* Sobre mi */
+
+.about-me div.text{
+    display: flex;
+}
+.about-me p{
+    font-size: 18px;
+    line-height: 28px;
+}
+.about-me ul{
+    display: flex;
+}
+.about-me li{
+    margin-right: 10px;
+    
+}
+.about-me a{
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 38px;
+    color: white;
+    font-size: 18px;
+    align-items: center;
+}
+.about-me .face a{
+    display: flex;
+    text-align: left;
+}
+.about-me .linkedin{
+    background-color: #0077b5;
+}
+.about-me .github{
+    background-color: black;
+}
+.about-me .twitter{
+    background-color: #1ea1f2;
+}
+.about-me .skype{
+    background-color: #0495e2;
+}
+.about-me figure{
+    margin-right: 40px;
+}
+.about-me img{
+    border-radius: 100%;
+    border: 6px solid #f0f0f0f0;
+}
+.about-me p{
+    margin-bottom: 36px;
+}
+.about-me:hover img{
+    border-color: #42704e;
+} 
+
+/* Portafolio */
+
+.portafolio .articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.portafolio article{
+    position: relative;
+    margin-bottom: 20px;
+}
+.portafolio article:hover .text{
+    display: flex;
+}
+.portafolio article:hover img{
+    border-color: #42704e; 
+}
+.portafolio .text{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+ 
+}
+.portafolio .text h3{
+    margin-bottom: 6px;
+}
+.portafolio .text ul{
+    display: flex;
+    align-items: center;
+}
+.portafolio .text li{
+    margin-right: 4px;
+
+}
+.portafolio .text span{
+    display: inline-block;
+    font-size: 11px;
+    font-family: Helvetica;
+    background-color: #4c2358;
+    padding: 5px 14px;
+    border-radius: 12px;
+}
+.portafolio img{
+    border: solid 10px #f0f0f0;
+}
+
+/* Mis Habilidades */
+
+.habilidades .lenguajes{
+    display: flex;
+    flex-wrap: wrap
+}
+.habilidades .skill{
+    display: flex;
+    justify-content: space-between;
+
+}
+.habilidades .skill h3{
+    font-size: 13px;
+    position: absolute;
+    font-weight: bold;
+} 
+.habilidades .meta{
+    width: 300px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border: solid 1px #d5d5d5;
+    margin: auto 20px 21px 112px ;
+    border-radius: 9.5px;
+}
+.habilidades:hover .meta{
+    background-color: #4c2358;
+}
+.habilidades .nivel{
+    width: 125px;
+    height: 18px;;
+    background: #42704e;
+    border-radius: 9.5px;
+}
+/* Contactame */
+
+.contactanos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: ;   
+}
+.contactanos .contactame{
+    max-width: 632px;
+    width: 100%;
+}
+.contactanos .datos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contactanos .dato{
+  margin-top: 19px;
+}
+.contactanos .dato label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    
+}
+.contactanos .dato input{
+    width: 305px;
+    height: 40px;
+    border: solid 1px #d5d5d5;
+}
+.contactanos:hover .dato input{
+    border-color: #42704e;
+}
+.contactanos .mensaje label{
+    display: block;
+    margin: 19px auto 8px;
+    font-size: 16px;
+}
+.contactanos .mensaje textarea{
+    width: 632px;
+    border: solid 1px #d5d5d5;
+    margin-bottom: 29px;
+}
+.contactanos:hover .mensaje textarea{
+    border-color: #42704e;
+}
+.contactanos .boton button{
+    width: 160px;
+    height: 44px;
+    background: #42704e;
+    color: white;
+    font-size: 16px;
+}
+.contactanos .direccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 198px;
+    margin-left: 39px;
+    font-size: 13px;
+}
+.contactanos .direccion h4{
+    font-weight: bold;  
+    margin-bottom: 15px;
+}
+
+
+.contactanos .direccion a{
+    color: #000000;
+}
+/* Footer */
+
+footer{
+    background: #000000;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background: #1ea1f2;
+}
+
+footer p{
+    color:#ffffff;
+    background: brown;
+}
+
